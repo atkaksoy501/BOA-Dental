@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800');
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+h1 {
+    margin-bottom: 0.5em;
+    font-size: 3.6rem;
+}
+
+p {
+    margin-bottom: 0.5em;
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 25px;
+    border-radius: 4px;
+}
+
+.button-primary {
+    position: relative;
+    background-color: #c0ca33;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 700;
+    transition: color 0.3s ease-in;
+    z-index: 1;
+}
+
+.overlay::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.header-area {
+    position: relative;
+    height: 80vh;
+    background: #5bc0de;
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repear;
+    background-size: cover;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    position: relative;
+    color: #295d6d;
+    text-align: center;
+    z-index: 1;
+    background-image: url('/images/Emergency-dentist.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+
+.banner .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.banner h1 {
+    font-weight: 800;
+    font-size: 5rem;
+}
+
+.banner p {
+    font-weight: 700;
+}
+
+.navbar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 0;
+    width: 100%;
+    transition: background 0.6s ease-in;
+    z-index: 99999;
+}
+
+.navbar .navbar-brand {
+    font-family: 'Lobster', cursive;
+    font-size: 2.5rem;
+}
+
+.navbar .navbar-toggler {
+    position: relative;
+    height: 50px;
+    width: 50px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.navbar-toggler .navbar-toggler-icon {
+    font-size: 1.6rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    position: relative;
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+#content{
+    background-color: #3c879e;
+    color: #ffffff;
+}
+
+#dental {
+    display: block;
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    
+}
+.content_header {
+    text-align: center;
+}
+h1.content_header  {
+    font-size: 36px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.content_text{
+    text-align: justify;
+}
