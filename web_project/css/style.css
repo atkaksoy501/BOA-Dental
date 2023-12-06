@@ -55,7 +55,6 @@ p {
     background: #5bc0de;
     background-attachment: fixed;
     background-position: center center;
-    background-repeat: no-repear;
     background-size: cover;
 }
 
@@ -66,7 +65,7 @@ p {
     color: #295d6d;
     text-align: center;
     z-index: 1;
-    background-image: url('/images/Emergency-dentist.jpg');
+    background-image: url('/web_project/images/Emergency-dentist.jpg');
     background-size: cover;
     background-position: center;
     height: 500px;
@@ -94,7 +93,6 @@ p {
     top: 0;
     padding: 0;
     width: 100%;
-    transition: background 0.6s ease-in;
     z-index: 99999;
 }
 
@@ -108,7 +106,6 @@ p {
     height: 50px;
     width: 50px;
     border: none;
-    cursor: pointer;
     outline: none;
 }
 
