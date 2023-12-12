@@ -9,6 +9,8 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.6rem;
     font-weight: 400;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
@@ -51,7 +53,7 @@ p {
 
 .header-area {
     position: relative;
-    height: 50vh;
+    height: 100%;
     background: #5bc0de;
     background-attachment: fixed;
     background-position: center center;
@@ -122,6 +124,7 @@ p {
 #content{
     background-color: #3c879e;
     color: #ffffff;
+    padding-top: 1.5rem;
 }
 
 #dental {
@@ -142,4 +145,103 @@ h1.content_header  {
 
 .content_text{
     text-align: justify;
+}
+
+#content_emergency{
+    padding: 60px 0;
+}
+
+#content_emergency h1{
+    color: #295d6d;         
+    font-size: 36px;
+    
+}
+
+#content_emergency p{
+    color: #3c879e;
+    padding-top: 10px;
+    font-size: 1.65rem;  
+}
+
+#content_emergency a {
+    background-color: #fff;
+    border: 2px solid #3c879e;
+    color: #3c879e;
+    border-radius: 40px;
+    text-decoration: none;
+}
+
+#content_emergency a:hover {
+    color: #fff;
+    background-color: #3c879e;
+}
+
+#gallery-header{
+    background-color: #3c879e;
+}
+#gallery-header h1 {
+    margin: 0 0 0 0;
+    padding-top: 8rem;
+    color: #fff;
+    font-size: 36px;
+}
+
+
+#gallery {
+    background-color: #3c879e;
+    padding: 130px 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 100%;
+    overflow: hidden;
+}
+
+.image-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    transform: perspective(1000px) rotateY(0deg);
+    transition: transform 0.7s;
+}
+
+.image-container span {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(400px);
+}
+
+.image-container span img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.btn-wrapper {
+    position: relative;
+    width: 80%;
+}
+
+#back{
+    background-color: #3c879e;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 40px;
+    text-decoration: none;
+}
+
+#next{
+    background-color: #3c879e;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 40px;
+    text-decoration: none;
+    left: 4%;
 }
