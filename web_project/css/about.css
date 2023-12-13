@@ -50,10 +50,11 @@ p {
 }
 
 .header-area {
-    background-image: url('/web_project/images/about.png'); /* Adjust as needed */
+    background: #5bc0de;
     background-size: cover;
     background-position: center;
-    height: 50vh; /* Adjust the height as needed */
+    height: 50vh;
+    /* Adjust the height as needed */
     position: relative;
 }
 
@@ -65,38 +66,29 @@ p {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.3); /* Adjust the alpha value as needed */
+    background-color: rgba(0, 0, 0, 0.3);
+    /* Adjust the alpha value as needed */
 }
 
-.header-content {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    width: 100%;
-    padding-left: 15%; /* Add indentation */
-    color: #ffffff; /* Text color */
-    text-shadow: 
-        -1px -1px 0 #000,  
-         1px -1px 0 #000,
-        -1px  1px 0 #000,
-         1px  1px 0 #000; /* Adjust text color as needed */
-    text-align: left;
-}
+
 
 .header-content h1 {
-    font-size: 10rem; /* Adjust font size as needed */
-    margin: 0; /* Remove default margin if necessary */
+    font-size: 10rem;
+    /* Adjust font size as needed */
+    margin: 0;
+    /* Remove default margin if necessary */
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .header-content {
-        padding-left: 10%; /* Smaller indentation for smaller screens */
+        padding-left: 10%;
+        /* Smaller indentation for smaller screens */
     }
 
     .header-content h1 {
-        font-size: 5rem; /* Smaller font size for smaller screens */
+        font-size: 5rem;
+        /* Smaller font size for smaller screens */
     }
 }
 
@@ -109,10 +101,10 @@ p {
     color: #295d6d;
     text-align: center;
     z-index: 1;
-    background-image: url('/web_project/images/Emergency-dentist.jpg');
+    background-image: url('/web_project/images/about.png');
     background-size: cover;
     background-position: center;
-    height: 500px;
+    height: 600px;
 }
 
 .banner .container {
@@ -124,7 +116,14 @@ p {
 
 .banner h1 {
     font-weight: 800;
-    font-size: 5rem;
+    color: lightgoldenrodyellow;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+    /* Adjust text color as needed */
+    font-size: 7rem;
 }
 
 .banner p {
@@ -163,7 +162,7 @@ p {
     font-size: 1.6rem;
 }
 
-#content{
+#content {
     background-color: #3c879e;
     color: #ffffff;
 }
@@ -173,18 +172,20 @@ p {
     margin: auto;
     width: 100px;
     height: 100px;
-    
+
 }
+
 .content_header {
     text-align: center;
 }
-h1.content_header  {
+
+h1.content_header {
     font-size: 36px;
     padding-top: 5px;
     padding-bottom: 10px;
 }
 
-.content_text{
+.content_text {
     text-align: justify;
 }
 
