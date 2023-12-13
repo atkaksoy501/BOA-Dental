@@ -19,3 +19,10 @@ function updategellary() {
   imgcontainer.style.transform = `perspective(1000px) rotateY(${a}deg)`;
 }
 updategellary();
+
+const faqs = document.querySelectorAll(".faq-container");
+faqs.forEach(faq => {
+  faq.addEventListener("click", () => {
+    faq.classList.toggle("active");
+  })
+})

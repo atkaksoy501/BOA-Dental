@@ -124,7 +124,8 @@ p {
 #content{
     background-color: #3c879e;
     color: #ffffff;
-    padding-top: 1.5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 
 #dental {
@@ -245,3 +246,150 @@ h1.content_header  {
     text-decoration: none;
     left: 4%;
 }
+
+#faq{
+    height: 100%;
+    margin: 4rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title{
+    font-size: 36px;
+    margin: 1rem 0rem;
+    color: #295d6d;
+    text-align: center;
+}
+
+.faq-container {
+    max-width: 60%;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #295d6d;
+    cursor: pointer;
+}
+
+.question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.question h3{
+    font-size: 2rem;
+    color: #295d6d;
+}
+
+.answer{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease;
+}
+.answer p{
+    padding-top: 1rem;
+    line-height: 1.6;
+    font-size: 1.6rem;
+}
+
+.faq-container.active .answer{
+    max-height: 300px;
+}
+
+.faq-container.active svg{
+    transform: rotate(180deg);
+}
+
+svg{
+    transition: transform 0.5s ease-in;
+}
+
+.footer-container{
+	max-width: 1170px;
+	margin:auto;
+}
+.footer-row{
+	display: flex;
+	flex-wrap: wrap;
+}
+footer ul{
+	list-style: none;
+    position: relative;
+    right: 40px; 
+}
+.footer{
+	background-color: #3c879e;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #214c5a;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #e0dfdf;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: #214c5a;
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+
+
