@@ -3,22 +3,21 @@ const prev = document.getElementById("back");
 const next = document.getElementById("next");
 
 let a = 0;
-let timeout;
 
 prev.addEventListener("click", () => {
   a = a + 45;
-  updategellary();
+  updategallery();
 });
 
 next.addEventListener("click", () => {
   a = a - 45;
-  updategellary();  
+  updategallery();  
 });
 
-function updategellary() {
+function updategallery() {
   imgcontainer.style.transform = `perspective(1000px) rotateY(${a}deg)`;
 }
-updategellary();
+updategallery();
 
 const faqs = document.querySelectorAll(".faq-container");
 faqs.forEach(faq => {
