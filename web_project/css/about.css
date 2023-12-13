@@ -104,7 +104,7 @@ p {
     background-image: url('/web_project/images/about.png');
     background-size: cover;
     background-position: center;
-    height: 600px;
+    height: 95%;
 }
 
 /* Responsive adjustments */
