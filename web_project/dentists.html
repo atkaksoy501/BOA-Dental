@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="/web_project/css/dentists.css">
     <link rel="stylesheet" media="(max-width:765px)" href="/web_project/css/mobile.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
@@ -43,32 +44,61 @@
         <div class="container">
             <div class="dentist-profiles">
                 <!-- Repeat this section for each dentist -->
-                <div class="dentist-profile">
-                    <img src="/web_project/images/aak.jpeg" alt="Dr. Name" class="dentist-photo">
+                <div class="dentist-profile" onclick="openProfileModal('aksoy')">
+                    <img src="/web_project/images/aak.jpeg" alt="Dr. Atakan Aksoy" class="dentist-photo">
                     <h2>Dr. Atakan Aksoy</h2>
-                    <p>Specialization: Cosmetic Dentistry</p>
-                    <p>Dr. Atakan Aksoy is a dedicated and experienced Cosmetic Dentist committed to enhancing smiles
-                        and boosting confidence through advanced cosmetic dental procedures. With a passion for both the
-                        art and science of dentistry, Dr. Aksoy combines precision and creativity to achieve optimal
-                        aesthetic results.</p>
+                    <p>Cosmetic Dentistry</p>
+                    <div class="dentist-description" id="aksoy-description" style="display: none;">
+                        <img src="/web_project/images/aak.jpeg" alt="Dr. Atakan Aksoy" id="aksoy-photo"
+                            style="display: none;">
+                        <h2>Dr. Atakan Aksoy</h2>
+                        <p class="dentist-details">Specialization: Cosmetic Dentistry</p>
+                        <p class="dentist-details">Years of Experience: 20</p>
+                        <p class="dentist-details"># of Operations: 800+</p>
+                        <p>Dr. Atakan Aksoy is a dedicated and experienced Cosmetic Dentist committed to enhancing
+                            smiles and boosting confidence through advanced cosmetic dental procedures. With a passion
+                            for both the art and science of dentistry, Dr. Aksoy combines precision and creativity to
+                            achieve optimal aesthetic results.</p>
+                    </div>
                 </div>
-                <div class="dentist-profile">
-                    <img src="/web_project/images/boe.jpeg" alt="Dr. Name" class="dentist-photo">
+
+                <div class="dentist-profile" onclick="openProfileModal('erten')">
+                    <img src="/web_project/images/boe.jpeg" alt="Dr. Burak Onur Erten" class="dentist-photo">
                     <h2>Dr. Burak Onur Erten</h2>
-                    <p>Specialization: Orthodontist</p>
-                    <p>Dr. Burak Onur Erten is a skilled and compassionate Orthodontist dedicated to helping patients
-                        achieve beautifully aligned smiles. With a strong foundation in dentistry and specialized
-                        training in orthodontics, Dr. Erten is passionate about enhancing both the aesthetic appeal and
-                        functionality of his patients' teeth.</p>
+                    <p>Orthodontist</p>
+                    <div class="dentist-description" id="erten-description" style="display: none;">
+                        <img src="/web_project/images/boe.jpeg" alt="Dr. Burak Onur Erten" id="erten-photo"
+                            style="display: none;">
+                        <h2>Dr. Burak Onur Erten</h2>
+                        <p class="dentist-details">Specialization: Orthodontist</p>
+                        <p class="dentist-details">Years of Experience: 15</p>
+                        <p class="dentist-details"># of Operations: 500+</p>
+                        <p>Dr. Burak Onur Erten is a skilled and compassionate Orthodontist dedicated to helping
+                            patients achieve beautifully aligned smiles. With a strong foundation in dentistry and
+                            specialized training in orthodontics, Dr. Erten is passionate about enhancing both the
+                            aesthetic appeal and functionality of his patients' teeth.</p>
+                    </div>
                 </div>
-                <div class="dentist-profile">
-                    <img src="/web_project/images/sod.jpeg" alt="Dr. Name" class="dentist-photo">
+
+                <div class="dentist-profile" onclick="openProfileModal('dogan')">
+                    <img src="/web_project/images/sod.jpeg" alt="Dr. Süleyman Onur Doğan" class="dentist-photo">
                     <h2>Dr. Süleyman Onur Doğan</h2>
-                    <p>Specialization: Endodontist</p>
-                    <p>Dr. Süleyman Onur Doğan is a highly skilled Endodontist devoted to providing specialized care in
-                        the diagnosis and treatment of dental pulp and root canal-related issues. With a solid
-                        foundation in dentistry and a focus on endodontics, Dr. Doğan is committed to preserving natural
-                        teeth and ensuring the comfort of his patients.</p>
+                    <p>Endodontist</p>
+                    <div class="dentist-description" id="dogan-description" style="display: none;">
+                        <img src="/web_project/images/sod.jpeg" alt="Dr. Süleyman Onur Doğan" id="dogan-photo"
+                            style="display: none;">
+                        <h2>Dr. Süleyman Onur Doğan</h2>
+                        <p class="dentist-details">Specialization: Endodontist</p>
+                        <p class="dentist-details">Years of Experience: 10</p>
+                        <p class="dentist-details"># of Operations: 200+</p>
+                        <p>Dr. Süleyman Onur Doğan is a highly skilled Endodontist devoted to providing specialized care
+                            in the
+                            diagnosis and treatment of dental pulp and root canal-related issues. With a solid
+                            foundation in dentistry
+                            and a focus on endodontics, Dr. Doğan is committed to preserving natural teeth and ensuring
+                            the comfort of
+                            his patients.</p>
+                    </div>
                 </div>
                 <!-- End of Dentist Profile Section -->
             </div>
@@ -76,43 +106,46 @@
     </section>
     <footer class="footer">
         <div class="footer-container">
-          <div class="footer-row">
-            <div class="footer-col">
-              <h4>company</h4>
-              <ul>
-                <li><a href="about.html">about us</a></li>
-                <li><a href="dentists.html">our dentists</a></li>
-              </ul>
+            <div class="footer-row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="about.html">about us</a></li>
+                        <li><a href="dentists.html">our dentists</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="contact.html">contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Office</h4>
+                    <ul>
+                        <li>
+                            <p style="color: #e0dfdf;">Çıplaklı Mah. Akdeniz Bulvarı No:290/A Döşemealtı/Antalya
+                            </p>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="footer-col">
-              <h4>get help</h4>
-              <ul>
-                <li><a href="#faq">FAQ</a></li>
-                <li><a href="contact.html">contact</a></li>
-              </ul>
-            </div>
-            <div class="footer-col">
-              <h4>follow us</h4>
-              <div class="social-links">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-              </div>
-            </div>
-            <div class="footer-col">
-              <h4>Office</h4>
-              <ul>
-                <li><p style="color: #e0dfdf;">Çıplaklı Mah. Akdeniz Bulvarı No:290/A Döşemealtı/Antalya
-                </p></li>
-              </ul>
-            </div>
-          </div>
         </div>
-     </footer>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="main.js"></script>
+    <script src="dentists.js"></script>
 </body>
+
 </html>
