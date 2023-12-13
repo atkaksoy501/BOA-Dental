@@ -263,7 +263,7 @@ h1.content_header  {
 }
 
 .faq-container {
-    max-width: 60%;
+    width: 80%;
     margin-top: 2rem;
     padding-bottom: 1rem;
     border-bottom: 2px solid #295d6d;
