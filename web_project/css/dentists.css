@@ -107,6 +107,25 @@ p {
     height: 600px;
 }
 
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .banner {
+        height: 400px; /* Adjust the height for smaller screens */
+    }
+    .header-area {
+        height: 450px; /* Adjust the height for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .banner {
+        height: 300px; /* Further adjust the height for even smaller screens */
+    }
+    .header-area {
+        height: 350px; /* Adjust the height for smaller screens */
+    }
+}
+
 .banner .container {
     position: absolute;
     top: 50%;
