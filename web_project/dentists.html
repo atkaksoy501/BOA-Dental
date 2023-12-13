@@ -4,15 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Dental Clinic</title>
+    <title>Our Dentists - BOA Dental</title>
     <link rel="stylesheet" href="/web_project/css/dentists.css">
-    <link rel="stylesheet" media="(max-width:765px)" href="/web_project/css/mobile.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 
 <body>
@@ -20,14 +18,16 @@
         <nav class="navbar navbar-expand-md navbar-dark">
             <div class="container">
                 <a href="index.html" class="navbar-brand">BOA Dental</a>
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#main-nav">
+                <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#main-nav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div id="main-nav" class="collapse navbar-collapse">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
                         <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-                        <li class="nav-item active"><a href="dentists.html" class="nav-link">Dentists</a></li>
+                        <li class="nav-item active">
+                            <a href="dentists.html" class="nav-link">Dentists</a>
+                        </li>
                         <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
                         <!-- Add other navigation links as needed -->
                     </ul>
@@ -40,108 +40,246 @@
             </div>
         </div>
     </header>
-    <section class="about-section">
-        <div class="container">
-            <div class="dentist-profiles">
-                <!-- Repeat this section for each dentist -->
-                <div class="dentist-profile" onclick="openProfileModal('aksoy')">
-                    <img src="/web_project/images/aak.jpeg" alt="Dr. Atakan Aksoy" class="dentist-photo">
-                    <h2>Dr. Atakan Aksoy</h2>
-                    <p>Cosmetic Dentistry</p>
-                    <div class="dentist-description" id="aksoy-description" style="display: none;">
-                        <img src="/web_project/images/aak.jpeg" alt="Dr. Atakan Aksoy" id="aksoy-photo"
-                            style="display: none;">
+    <main>
+        <section class="about-section">
+            <div class="container">
+                <div class="dentist-profiles">
+                    <!-- Repeat this section for each dentist -->
+                    <div class="dentist-profile" onclick="openProfileModal('aksoy')">
+                        <img src="/web_project/images/aak.jpeg" alt="Dr. Atakan Aksoy" class="dentist-photo">
                         <h2>Dr. Atakan Aksoy</h2>
-                        <p class="dentist-details">Specialization: Cosmetic Dentistry</p>
-                        <p class="dentist-details">Years of Experience: 20</p>
-                        <p class="dentist-details"># of Operations: 800+</p>
-                        <p>Dr. Atakan Aksoy is a dedicated and experienced Cosmetic Dentist committed to enhancing
-                            smiles and boosting confidence through advanced cosmetic dental procedures. With a passion
-                            for both the art and science of dentistry, Dr. Aksoy combines precision and creativity to
-                            achieve optimal aesthetic results.</p>
-                    </div>
-                </div>
+                        <p>Cosmetic Dentistry</p>
+                        <div class="dentist-description" id="aksoy-description" style="display: none;">
+                            <img src="/web_project/images/aak.jpeg" alt="Dr. Atakan Aksoy" id="aksoy-photo"
+                                style="display: none;">
+                            <h2>Dr. Atakan Aksoy</h2>
+                            <p class="dentist-details">Specialization: Cosmetic Dentistry</p>
+                            <p class="dentist-details">Years of Experience: 20</p>
+                            <p class="dentist-details">Number of Operations: 800+</p>
+                            <p>Dr. Atakan Aksoy is a dedicated and experienced Cosmetic Dentist committed to enhancing
+                                smiles and boosting confidence through advanced cosmetic dental procedures. With a
+                                passion
+                                for both the art and science of dentistry, Dr. Aksoy combines precision and creativity
+                                to
+                                achieve optimal aesthetic results.</p>
+                            <section class="testimonials-section">
+                                <div class="container">
+                                    <h2>What Our Patients Say About Dr. Atakan Aksoy</h2>
 
-                <div class="dentist-profile" onclick="openProfileModal('erten')">
-                    <img src="/web_project/images/boe.jpeg" alt="Dr. Burak Onur Erten" class="dentist-photo">
-                    <h2>Dr. Burak Onur Erten</h2>
-                    <p>Orthodontist</p>
-                    <div class="dentist-description" id="erten-description" style="display: none;">
-                        <img src="/web_project/images/boe.jpeg" alt="Dr. Burak Onur Erten" id="erten-photo"
-                            style="display: none;">
+
+                                    <!-- Testimonials about BOA Dental -->
+                                    <div class="testimonial">
+                                        <p>"Dr. Aksoy has an incredible talent for transforming smiles. His meticulous
+                                            attention to detail and artistic approach to cosmetic dentistry are truly
+                                            commendable. I couldn't be happier with the results – a perfect,
+                                            natural-looking
+                                            smile that has boosted my confidence immensely. Thank you, Dr. Aksoy!"</p>
+                                        <p class="testimonial-author">- Emily Thompson, Satisfied Patient</p>
+                                    </div>
+
+                                    <div class="testimonial">
+                                        <p>"Choosing Dr. Atakan Aksoy for my cosmetic dentistry needs was the best
+                                            decision
+                                            I've ever made. His expertise, coupled with a warm and caring demeanor, made
+                                            the
+                                            entire experience comfortable and stress-free. The results exceeded my
+                                            expectations, and I now confidently flash my beautiful smile, thanks to Dr.
+                                            Aksoy's skillful hands."</p>
+                                        <p class="testimonial-author">- Daniel Harris, Grateful Patient</p>
+                                    </div>
+
+                                    <div class="testimonial">
+                                        <p>"I am beyond grateful for the exceptional cosmetic dentistry work done by Dr.
+                                            Aksoy. His passion for creating smiles that reflect both beauty and
+                                            functionality is evident in every detail. The personalized care and genuine
+                                            concern for his patients make Dr. Aksoy not only a skilled dentist but a
+                                            true
+                                            artist in the field. My sincere thanks for giving me a reason to smile
+                                            brighter!"</p>
+                                        <p class="testimonial-author">- Jessica Martinez, Valued Patient</p>
+                                    </div>
+
+
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+
+                    <div class="dentist-profile" onclick="openProfileModal('erten')">
+                        <img src="/web_project/images/boe.jpeg" alt="Dr. Burak Onur Erten" class="dentist-photo">
                         <h2>Dr. Burak Onur Erten</h2>
-                        <p class="dentist-details">Specialization: Orthodontist</p>
-                        <p class="dentist-details">Years of Experience: 15</p>
-                        <p class="dentist-details"># of Operations: 500+</p>
-                        <p>Dr. Burak Onur Erten is a skilled and compassionate Orthodontist dedicated to helping
-                            patients achieve beautifully aligned smiles. With a strong foundation in dentistry and
-                            specialized training in orthodontics, Dr. Erten is passionate about enhancing both the
-                            aesthetic appeal and functionality of his patients' teeth.</p>
-                    </div>
-                </div>
+                        <p>Orthodontist</p>
+                        <div class="dentist-description" id="erten-description" style="display: none;">
+                            <img src="/web_project/images/boe.jpeg" alt="Dr. Burak Onur Erten" id="erten-photo"
+                                style="display: none;">
+                            <h2>Dr. Burak Onur Erten</h2>
+                            <p class="dentist-details">Specialization: Orthodontist</p>
+                            <p class="dentist-details">Years of Experience: 15</p>
+                            <p class="dentist-details">Number of Operations: 500+</p>
+                            <p>Dr. Burak Onur Erten is a skilled and compassionate Orthodontist dedicated to helping
+                                patients achieve beautifully aligned smiles. With a strong foundation in dentistry and
+                                specialized training in orthodontics, Dr. Erten is passionate about enhancing both the
+                                aesthetic appeal and functionality of his patients' teeth.</p>
+                            <section class="testimonials-section">
+                                <div class="container">
+                                    <h2>What Our Patients Say About Dr. Burak Onur Erten</h2>
 
-                <div class="dentist-profile" onclick="openProfileModal('dogan')">
-                    <img src="/web_project/images/sod.jpeg" alt="Dr. Süleyman Onur Doğan" class="dentist-photo">
-                    <h2>Dr. Süleyman Onur Doğan</h2>
-                    <p>Endodontist</p>
-                    <div class="dentist-description" id="dogan-description" style="display: none;">
-                        <img src="/web_project/images/sod.jpeg" alt="Dr. Süleyman Onur Doğan" id="dogan-photo"
-                            style="display: none;">
+                                    <!-- Testimonials about Dr. Burak Onur Erten - Orthodontist -->
+                                    <div class="testimonial">
+                                        <p>"Dr. Erten is a true professional in the field of orthodontics. His
+                                            dedication to
+                                            creating
+                                            perfectly aligned smiles is evident in the outstanding results he delivers.
+                                            The
+                                            journey to
+                                            straighter teeth was seamless, and I appreciate Dr. Erten's expertise and
+                                            caring
+                                            approach
+                                            throughout the process."</p>
+                                        <p class="testimonial-author">- Olivia Turner, Satisfied Patient</p>
+                                    </div>
+
+                                    <div class="testimonial">
+                                        <p>"I can't thank Dr. Burak Onur Erten enough for transforming my smile. As an
+                                            orthodontist, he
+                                            combines precision with a personalized touch. The results are not only
+                                            cosmetically
+                                            pleasing but also contribute to improved oral health. I highly recommend Dr.
+                                            Erten for anyone
+                                            seeking orthodontic care."</p>
+                                        <p class="testimonial-author">- Ethan White, Grateful Patient</p>
+                                    </div>
+
+                                    <div class="testimonial">
+                                        <p>"Choosing Dr. Erten for orthodontic treatment was a fantastic decision. His
+                                            professionalism and
+                                            commitment to achieving optimal results are remarkable. The process was
+                                            smooth,
+                                            and the
+                                            results exceeded my expectations. I now have a beautifully aligned smile,
+                                            thanks
+                                            to Dr.
+                                            Burak Onur Erten."</p>
+                                        <p class="testimonial-author">- Sarah Davis, Valued Patient</p>
+                                    </div>
+                                </div>
+                            </section>
+
+                        </div>
+                    </div>
+
+                    <div class="dentist-profile" onclick="openProfileModal('dogan')">
+                        <img src="/web_project/images/sod.jpeg" alt="Dr. Süleyman Onur Doğan" class="dentist-photo">
                         <h2>Dr. Süleyman Onur Doğan</h2>
-                        <p class="dentist-details">Specialization: Endodontist</p>
-                        <p class="dentist-details">Years of Experience: 10</p>
-                        <p class="dentist-details"># of Operations: 200+</p>
-                        <p>Dr. Süleyman Onur Doğan is a highly skilled Endodontist devoted to providing specialized care
-                            in the
-                            diagnosis and treatment of dental pulp and root canal-related issues. With a solid
-                            foundation in dentistry
-                            and a focus on endodontics, Dr. Doğan is committed to preserving natural teeth and ensuring
-                            the comfort of
-                            his patients.</p>
+                        <p>Endodontist</p>
+                        <div class="dentist-description" id="dogan-description" style="display: none;">
+                            <img src="/web_project/images/sod.jpeg" alt="Dr. Süleyman Onur Doğan" id="dogan-photo"
+                                style="display: none;">
+                            <h2>Dr. Süleyman Onur Doğan</h2>
+                            <p class="dentist-details">Specialization: Endodontist</p>
+                            <p class="dentist-details">Years of Experience: 10</p>
+                            <p class="dentist-details">Number of Operations: 200+</p>
+                            <p>Dr. Süleyman Onur Doğan is a highly skilled Endodontist devoted to providing specialized
+                                care
+                                in the
+                                diagnosis and treatment of dental pulp and root canal-related issues. With a solid
+                                foundation in dentistry
+                                and a focus on endodontics, Dr. Doğan is committed to preserving natural teeth and
+                                ensuring
+                                the comfort of
+                                his patients.</p>
+                            <section class="testimonials-section">
+                                <div class="container">
+                                    <h2>What Our Patients Say About Dr. Süleyman Onur Doğan</h2>
+
+                                    <!-- Testimonials about Dr. Süleyman Onur Doğan - Endodontist -->
+                                    <div class="testimonial">
+                                        <p>"Dr. Doğan's expertise in endodontics is unmatched. He successfully diagnosed
+                                            and
+                                            treated my
+                                            dental issues with precision and care. I'm grateful for his dedication to
+                                            preserving natural
+                                            teeth and ensuring a pain-free experience. Dr. Süleyman Onur Doğan is a true
+                                            professional in
+                                            endodontic care."</p>
+                                        <p class="testimonial-author">- Emma Carter, Satisfied Patient</p>
+                                    </div>
+
+                                    <div class="testimonial">
+                                        <p>"Choosing Dr. Doğan as my endodontist was the best decision for my dental
+                                            health.
+                                            His
+                                            attention to detail and commitment to excellence are truly commendable. The
+                                            root
+                                            canal
+                                            procedure was conducted with utmost care, and I appreciate Dr. Doğan's skill
+                                            and
+                                            professionalism."</p>
+                                        <p class="testimonial-author">- Jason Miller, Grateful Patient</p>
+                                    </div>
+
+                                    <div class="testimonial">
+                                        <p>"I want to express my gratitude to Dr. Süleyman Onur Doğan for his
+                                            exceptional
+                                            endodontic
+                                            care. His knowledge and gentle approach made the entire experience
+                                            stress-free.
+                                            Dr. Doğan's
+                                            commitment to providing high-quality endodontic services shines through, and
+                                            I
+                                            highly
+                                            recommend him."</p>
+                                        <p class="testimonial-author">- Hannah Johnson, Valued Patient</p>
+                                    </div>
+                                </div>
+                            </section>
+
+                        </div>
+                    </div>
+                    <!-- End of Dentist Profile Section -->
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-row">
+                    <div class="footer-col">
+                        <h4>company</h4>
+                        <ul>
+                            <li><a href="about.html">about us</a></li>
+                            <li><a href="dentists.html">our dentists</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>get help</h4>
+                        <ul>
+                            <li><a href="#faq">FAQ</a></li>
+                            <li><a href="contact.html">contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>follow us</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Office</h4>
+                        <ul>
+                            <li>
+                                <p style="color: #e0dfdf;">Çıplaklı Mah. Akdeniz Bulvarı No:290/A Döşemealtı/Antalya
+                                </p>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <!-- End of Dentist Profile Section -->
             </div>
-        </div>
-    </section>
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-row">
-                <div class="footer-col">
-                    <h4>company</h4>
-                    <ul>
-                        <li><a href="about.html">about us</a></li>
-                        <li><a href="dentists.html">our dentists</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>get help</h4>
-                    <ul>
-                        <li><a href="#faq">FAQ</a></li>
-                        <li><a href="contact.html">contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>follow us</h4>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <div class="footer-col">
-                    <h4>Office</h4>
-                    <ul>
-                        <li>
-                            <p style="color: #e0dfdf;">Çıplaklı Mah. Akdeniz Bulvarı No:290/A Döşemealtı/Antalya
-                            </p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
+        </footer>
+    </main>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

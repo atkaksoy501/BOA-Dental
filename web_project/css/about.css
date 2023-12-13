@@ -321,3 +321,33 @@ footer ul{
     width: 100%;
 }
 }
+
+/* Testimonials Section */
+.testimonials-section {
+    background-color: #f8f9fa;
+    padding: 4rem 0;
+}
+
+.testimonial {
+    background-color: lightblue;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+.testimonial p {
+    margin-bottom: 10px;
+
+.testimonial-author {
+    font-style: italic;
+    color: #888888;
+}
+
+/* Responsive styling */
+@media (max-width: 765px) {
+    .testimonial {
+        padding: 15px;
+    }
+}
+}
