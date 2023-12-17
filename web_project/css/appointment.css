@@ -179,9 +179,9 @@ p {
 
 .form-container {
     max-width: 1200px; 
-    margin: auto;
+    margin: 22px auto;
     font-family: 'Open Sans', sans-serif;
-  }
+}
 
 .form-control {
     font-size: 28px; 
@@ -197,6 +197,30 @@ label {
 .btn-info {
     font-size: 16px;
     height: 35px;
+}
+
+@media (max-width: 1200px) {
+    .form-container {
+        padding: 20px; 
+    }
+
+    .form-control {
+        font-size: 20px; 
+    }
+
+    #doctorSelect {
+        height: 30px; 
+        font-size: 14px; 
+    }
+
+    label {
+        font-size: 14px; 
+    }
+
+    .btn-info {
+        font-size: 14px;
+        height: 30px;
+    }
 }
 
 /* Responsive styling */
