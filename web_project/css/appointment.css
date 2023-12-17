@@ -197,6 +197,7 @@ label {
 .btn-info {
     font-size: 16px;
     height: 35px;
+    width: 100px;
 }
 
 @media (max-width: 1200px) {
@@ -219,7 +220,8 @@ label {
 
     .btn-info {
         font-size: 14px;
-        height: 30px;
+        height: 33px;
+        width: 80px;
     }
 }
 
