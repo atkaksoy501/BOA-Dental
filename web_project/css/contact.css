@@ -101,7 +101,7 @@ p {
     color: #295d6d;
     text-align: center;
     z-index: 1;
-    background-image: url('/web_project/images/slayt-1-min.png');
+    background-image: url('../images/slayt-1-min.png');
     background-size: cover;
     background-position: center;
     height: 95%;
