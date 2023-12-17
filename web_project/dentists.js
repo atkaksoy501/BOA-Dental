@@ -38,3 +38,16 @@ function closeProfileModal() {
     }, 300); // Adjust the timeout to match the transition duration
   }
 }
+
+$(document).ready(function () {
+  $('.navbar-toggler').click(function () {
+    var mainContent = $('#main-content');
+    var navHeight = $('.navbar').outerHeight();
+
+    if (mainContent.hasClass('menu-open')) {
+      mainContent.removeClass('menu-open').css('margin-top', 0);
+    } else {
+      mainContent.addClass('menu-open').css('margin-top', 125);
+    }
+  });
+});
