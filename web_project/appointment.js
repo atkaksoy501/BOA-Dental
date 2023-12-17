@@ -16,12 +16,6 @@ flatpickr("#datePicker", {
   enableTime: false,
   dateFormat: "Y-m-d",
   minDate: "today",
-  disable: [
-    function(date) {
-
-      return date < new Date();
-    }
-  ],
   onChange: function (selectedDates, dateStr) {
     generateTimeOptions();
   }

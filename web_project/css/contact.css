@@ -131,6 +131,7 @@ p {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    
 }
 
 .banner h1 {
@@ -277,6 +278,9 @@ h1.content_header {
     font-size: 17px;
     height: 40px;
   } 
+  .contact #map{
+    margin-top: 20px;
+  }
 /* Responsive styling */
 @media (max-width: 765px) {
     .contact-section h1 {
@@ -286,6 +290,9 @@ h1.content_header {
     .contact-section p {
         font-size: 1.4rem;
     }
+    .contact #map{
+        margin-top: 300px auto;
+      }
 }
 
 .footer-container{

@@ -16,7 +16,7 @@ h1 {
 
 p {
     margin-bottom: 0.5em;
-    font-size: 1.6rem;
+    font-size: 1.0rem;
     line-height: 1.6;
 }
 
@@ -182,7 +182,6 @@ p {
     margin: 22px auto;
     font-family: 'Open Sans', sans-serif;
 }
-
 .form-control {
     font-size: 28px; 
 }
