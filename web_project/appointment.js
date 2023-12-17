@@ -2,7 +2,7 @@ function showAlert() {
   alert('Appointment submitted!');
 }
 
-function showAlert() {
+function showAlert_2() {
   alert('Contact form submitted!');
 }
 
