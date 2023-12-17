@@ -61,7 +61,6 @@ p {
     height: 600px;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
     .banner {
         height: 400px;
@@ -133,7 +132,6 @@ p {
     color: #666;
 }
 
-/* Responsive styling */
 @media (max-width: 765px) {
     .dentists-section p {
         font-size: 1.4rem;
@@ -170,7 +168,6 @@ p {
     margin-bottom: 10px;
 }
 
-/* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
     .dentist-profile {
         max-width: calc(50% - 20px);
@@ -261,7 +258,6 @@ footer ul {
     background-color: #ffffff;
 }
 
-/*responsive*/
 @media(max-width: 767px) {
     .footer-col {
         width: 50%;
@@ -318,7 +314,6 @@ footer ul {
     color: #555;
 }
 
-/* Responsive adjustments for the modal */
 @media (max-width: 768px) {
     .modal-content {
         max-width: 80%;
@@ -347,7 +342,6 @@ footer ul {
     color: #888888;
 }
 
-/* Responsive styling */
 @media (max-width: 765px) {
     .testimonial {
         padding: 15px;
