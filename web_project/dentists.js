@@ -23,6 +23,8 @@ function openProfileModal(dentistId) {
   setTimeout(function () {
     modal.querySelector('.modal-content').classList.add('slide-in');
   }, 10); // Delay to ensure the modal is rendered before adding the class
+
+  
 }
 
 function closeProfileModal() {
@@ -35,7 +37,7 @@ function closeProfileModal() {
     // Remove the modal from the DOM after the sliding effect
     setTimeout(function () {
       modal.parentNode.removeChild(modal);
-    }, 300); // Adjust the timeout to match the transition duration
+    }); // Adjust the timeout to match the transition duration
   }
 }
 

@@ -393,7 +393,8 @@ footer ul {
 
 
 .close {
-    position: absolute;
+    position: sticky;
+    text-align: right;
     top: 10px;
     right: 10px;
     font-size: 20px;
