@@ -8,7 +8,7 @@ $(document).ready(function () {
       slidesToScroll: 1,
       autoplay: true, // Auto-slide
       autoplaySpeed: 3000, // Slide every 3 seconds
-      adaptiveHeight: true,
+      adaptiveHeight: false,
       responsive: [
         {
           breakpoint: 768,
