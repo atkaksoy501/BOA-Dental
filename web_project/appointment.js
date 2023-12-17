@@ -12,19 +12,6 @@ const reservedSlots = {
   'Atakan': { '2023-12-20': ['13:00', '15:00'], '2023-12-21': ['12:00', '17:00'] }
 };
 
-function updateAvailableDates() {
-  const doctorSelect = document.getElementById('doctorSelect');
-  const datePicker = document.getElementById('datePicker');
-  const timePicker = document.getElementById('timePicker');
-
-  const selectedDoctor = doctorSelect.value;
-  const reservedDates = Object.keys(reservedSlots[selectedDoctor] || {});
-
-  datePicker._flatpickr.set('disable', reservedDates);
-
-  timePicker.innerHTML = '<option value="" disabled selected>Select a time</option>';
-}
-
 flatpickr("#datePicker", {
   enableTime: false,
   dateFormat: "Y-m-d",
