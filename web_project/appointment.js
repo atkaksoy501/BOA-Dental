@@ -2,6 +2,10 @@ function showAlert() {
   alert('Appointment submitted!');
 }
 
+function showAlert() {
+  alert('Contact form submitted!');
+}
+
 const reservedSlots = {
   'Onur': { '2023-12-20': ['10:00', '14:00','15:00'], '2023-12-21': ['09:00', '15:00'] },
   'Burak': { '2023-12-20': ['11:00', '16:00'], '2023-12-21': ['10:00', '14:00'] },
