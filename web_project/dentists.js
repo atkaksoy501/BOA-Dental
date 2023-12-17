@@ -28,13 +28,9 @@ function openProfileModal(dentistId) {
 function closeProfileModal() {
   var modal = document.querySelector('.modal');
   if (modal) {
-    // Add class for sliding effect
-    modal.querySelector('.modal-content').classList.remove('slide-in');
-    modal.querySelector('.modal-content').classList.add('slide-out');
-
     // Remove the modal from the DOM after the sliding effect
     setTimeout(function () {
       modal.parentNode.removeChild(modal);
-    }, 300); // Adjust the timeout to match the transition duration
+    }); // Adjust the timeout to match the transition duration
   }
 }
