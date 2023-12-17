@@ -55,7 +55,7 @@ p {
     color: #295d6d;
     text-align: center;
     z-index: 1;
-    background-image: url('/web_project/images/our-dentists.png');
+    background-image: url('../images/our-dentists.png');
     background-size: cover;
     background-position: center;
     height: 600px;

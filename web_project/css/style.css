@@ -67,7 +67,7 @@ p {
     color: #295d6d;
     text-align: center;
     z-index: 1;
-    background-image: url('/web_project/images/Emergency-dentist.jpg');
+    background-image: url('../images/Emergency-dentist.jpg');
     background-size: cover;
     background-position: center;
     height: 500px;
