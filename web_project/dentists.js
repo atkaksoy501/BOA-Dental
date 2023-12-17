@@ -23,8 +23,6 @@ function openProfileModal(dentistId) {
   setTimeout(function () {
     modal.querySelector('.modal-content').classList.add('slide-in');
   }, 10); // Delay to ensure the modal is rendered before adding the class
-
-  
 }
 
 function closeProfileModal() {
