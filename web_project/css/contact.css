@@ -153,33 +153,6 @@ p {
     font-size: 1.6rem;
 }
 
-#content {
-    background-color: #3c879e;
-    color: #ffffff;
-}
-
-#dental {
-    display: block;
-    margin: auto;
-    width: 100px;
-    height: 100px;
-
-}
-
-.content_header {
-    text-align: center;
-}
-
-h1.content_header {
-    font-size: 36px;
-    padding-top: 5px;
-    padding-bottom: 10px;
-}
-
-.content_text {
-    text-align: justify;
-}
-
 .contact-section {
     padding: 4rem 0;
     background-color: #f8f9fa;

@@ -48,12 +48,12 @@ p {
 }
 
 .header-area {
-    background: #5bc0de;
-    background-size: cover;
-    background-position: center;
-    height: 50vh;
-    /* Adjust the height as needed */
     position: relative;
+    height: 100%;
+    background: #5bc0de;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
 }
 
 /* Reduce the darkness of the overlay, or remove it entirely if needed */
@@ -65,29 +65,6 @@ p {
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.3);
-    /* Adjust the alpha value as needed */
-}
-
-
-
-.header-content h1 {
-    font-size: 10rem;
-    /* Adjust font size as needed */
-    margin: 0;
-    /* Remove default margin if necessary */
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .header-content {
-        padding-left: 10%;
-        /* Smaller indentation for smaller screens */
-    }
-
-    .header-content h1 {
-        font-size: 5rem;
-        /* Smaller font size for smaller screens */
-    }
 }
 
 .banner {
@@ -100,27 +77,30 @@ p {
     background-image: url('../images/slayt-1-min.png');
     background-size: cover;
     background-position: center;
-    height: 95%;
+    height: 500px;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
     .banner {
-        height: 400px; /* Adjust the height for smaller screens */
-    }
-    .header-area {
-        height: 450px; /* Adjust the height for smaller screens */
+        height: 400px;
     }
 }
 
-@media (max-width: 480px) {
-    .banner {
-        height: 300px; /* Further adjust the height for even smaller screens */
+.header-content h1 {
+    font-size: 10rem;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .header-content {
+        padding-left: 10%;
     }
-    .header-area {
-        height: 350px; /* Adjust the height for smaller screens */
+
+    .header-content h1 {
+        font-size: 5rem;
     }
 }
+
 
 .banner .container {
     position: absolute;
@@ -137,7 +117,6 @@ p {
         1px -1px 0 #000,
         -1px 1px 0 #000,
         1px 1px 0 #000;
-    /* Adjust text color as needed */
     font-size: 4.3rem;
 }
 
@@ -168,7 +147,7 @@ p {
 }
 
 .navbar-toggler .navbar-toggler-icon {
-    font-size: 1.6rem;
+    font-size: 1rem;
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -224,16 +203,6 @@ label {
     }
 }
 
-/* Responsive styling */
-@media (max-width: 765px) {
-    .contact-section h1 {
-        font-size: 2.8rem;
-    }
-
-    .contact-section p {
-        font-size: 1.4rem;
-    }
-}
 
 .footer-container{
 	max-width: 1170px;
