@@ -62,7 +62,7 @@ p {
     background-image: url('../images/about.png');
     background-size: cover;
     background-position: center;
-    height: 600px;
+    height: 500px;
 }
 
 @media (max-width: 768px) {
